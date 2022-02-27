@@ -2,14 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "dataConnectorsKind": {
-            "type": "array",
-            "defaultValue": [],
-            "metadata": {
-                "description": "The kind of data connectors to enable"
-            }
-        },
-		"subscriptionId": {
+        "subscriptionId": {
             "type": "string",
             "metadata": {
                 "description": "Sbscription Id to monitor"
