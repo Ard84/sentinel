@@ -120,7 +120,7 @@
                         "state": "enabled"
                     },
                     "discoveryLogs": {
-                        "state": "[if(parameters('mcasDiscoveryLogs'),'enabled','disabled')]"
+                        "state": "enabled"
                     }
                 }
             }
