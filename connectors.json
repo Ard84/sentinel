@@ -74,7 +74,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('o365Name'))]",
-            "kind": "Office365",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
@@ -96,7 +95,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('mdatpName'))]",
-            "kind": "MicrosoftDefenderAdvancedThreatProtection",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
@@ -112,7 +110,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('mcasName'))]",
-            "kind": "MicrosoftCloudAppSecurity",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
@@ -131,7 +128,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('ascName'))]",
-            "kind": "AzureSecurityCenter",
             "properties": {
                 "subscriptionId": "[parameters('subscriptionId')]",
                 "dataTypes": {
@@ -147,7 +143,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('aatpName'))]",
-            "kind": "AzureAdvancedThreatProtection",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
@@ -163,7 +158,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('aadipName'))]",
-            "kind": "AzureActiveDirectory",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
@@ -179,7 +173,6 @@
             "apiVersion": "2020-03-01-preview",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'), '/', replace(parameters('subscriptionId'),'-', ''))]",
-            "kind": "AzureActivityLog",
             "properties": {
                 "linkedResourceId": "[concat('/subscriptions/', parameters('subscriptionId'), '/providers/microsoft.insights/eventtypes/management')]"
             }
@@ -190,7 +183,6 @@
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
             "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('tiName'))]",
-            "kind": "ThreatIntelligence",
             "properties": {
                 "tenantId": "[parameters('tenantId')]",
                 "dataTypes": {
