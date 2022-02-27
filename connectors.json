@@ -67,7 +67,7 @@
     },
     "resources": [
         {
-            "condition": "[equals(parameters('connector365'), 'Yes')]",
+            "condition": "[contains(parameters('connector365'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -88,7 +88,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorATP'), 'Yes')]",
+            "condition": "[contains(parameters('connectorATP'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -103,7 +103,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorCAS'), 'Yes')]",
+            "condition": "[contains(parameters('connectorCAS'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -121,7 +121,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorASC'), 'Yes')]",
+            "condition": "[contains(parameters('connectorASC'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -136,7 +136,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorDefender'), 'Yes')]",
+            "condition": "[contains(parameters('connectorDefender'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -151,7 +151,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorAAD'), 'Yes')]",
+            "condition": "[contains(parameters('connectorAAD'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
@@ -166,7 +166,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorAADD'), 'Yes')]",
+            "condition": "[contains(parameters('connectorAADD'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/dataSources",
             "apiVersion": "2020-03-01-preview",
             "location": "[parameters('location')]",
@@ -176,7 +176,7 @@
             }
         },
         {
-            "condition": "[equals(parameters('connectorTI'), 'Yes')]",
+            "condition": "[contains(parameters('connectorTI'), 'Yes')]",
             "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
             "apiVersion": "2020-01-01",
             "location": "[parameters('location')]",
