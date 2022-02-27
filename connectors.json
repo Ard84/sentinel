@@ -41,13 +41,11 @@
                 "description": "Location for all resources."
             }
         },
-		        "connector365": {
+	"connector365": {
             "type": "string"
-
         },
         "connectorAAD": {
-            "type": "string"
-			
+            "type": "string"		
         },
         "connectorAADD": {
             "type": "string"
@@ -67,34 +65,6 @@
         "connectorCAS": {
             "type": "string"
         },
-        "connectorSTG": {
-            "type": "string"
-        },
-		"connectorCB": {
-            "type": "string"
-        },
-		"connectorQRADAR": {
-            "type": "string"
-        },
-		"connectorFORTI": {
-            "type": "string"
-        },
-		"queryRansomware": {
-            "type": "string"
-        },
-		"SelectedStorageAccount": {
-            "type": "string"
-        },
-		"SelectedStorageAccountResource": {
-            "type": "string"
-        },
-		"StorageAccountName": {
-            "type": "string"
-        },
-		"StorageAccountValidatedName": {
-            "type": "string"
-        }		
-    },
     "variables": {
         "o365Name": "[concat('o365', uniqueString(resourceGroup().id))]",
         "mdatpName": "[concat('mdatp', uniqueString(resourceGroup().id))]",
