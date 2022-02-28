@@ -32,7 +32,13 @@
         }
        },
        "variables": {
-        "o365Name": "[concat('o365', uniqueString(resourceGroup().id))]"         
+        "o365Name": "[concat('o365', uniqueString(resourceGroup().id))]",
+                   "mdatpName": "[concat('mdatp', uniqueString(resourceGroup().id))]",
+        "aatpName": "[concat('aatp', uniqueString(resourceGroup().id))]",
+        "ascName": "[concat('asc', uniqueString(resourceGroup().id))]",
+        "mcasName": "[concat('mcas', uniqueString(resourceGroup().id))]",
+        "aadipName": "[concat('aadip', uniqueString(resourceGroup().id))]",
+        "tiName": "[concat('ti', uniqueString(resourceGroup().id))]"
     },
      "resources": [
          {
