@@ -24,6 +24,24 @@
          "connector365": {
             "type": "string"
         },
+                "connectorAAD": {
+            "type": "string"		
+        },
+        "connectorAADD": {
+            "type": "string"
+        },
+        "connectorDefender": {
+            "type": "string"
+        },
+        "connectorTI": {
+            "type": "string"
+        },
+        "connectorASC": {
+            "type": "string"
+        },
+        "connectorCAS": {
+            "type": "string"
+        },
          "connectorATP": {
             "type": "string"
         }
