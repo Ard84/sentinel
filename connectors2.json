@@ -24,9 +24,6 @@
          "connector365": {
             "type": "string"
         },
-         "connectorCAS": {
-            "type": "string"
-        },
          "connectorATP": {
             "type": "string"
         }
