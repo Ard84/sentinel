@@ -77,23 +77,5 @@
                     }
                 }
             }
-        },
-        {
-            "condition": "[equals(parameters('connectorCAS'), 'Yes')]",
-            "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
-            "apiVersion": "2020-01-01",
-            "location": "[parameters('location')]",
-            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('mcasName'))]",
-            "properties": {
-                "tenantId": "[parameters('tenantId')]",
-                "dataTypes": {
-                    "alerts": {
-                        "state": "enabled"
-                    },
-                    "discoveryLogs": {
-                        "state": "enabled"
-                    }
-                }
-            }
         }]
 }
