@@ -27,8 +27,6 @@
         "connectorAADD": {
             "type": "string"
         },
-       "variables": {
-            },
      "resources": [
         {
             "condition": "[contains(parameters('connectorAADD'), 'Yes')]",
